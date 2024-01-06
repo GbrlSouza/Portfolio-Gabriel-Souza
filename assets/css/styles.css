@@ -528,3 +528,22 @@ img {
     width: 450px;
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container main {
+  margin-top: 15rem;
+  flex: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .container main {
+    margin-top: 20rem;
+    padding-bottom: -50px;
+    flex: 1 1 0;
+  }
+}
