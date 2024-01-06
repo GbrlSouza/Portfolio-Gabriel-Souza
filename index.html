@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio Gabriel Souza</title>
+        <title>Portfólio Gabriel Souza</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -22,11 +22,11 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active">Início</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Trabalhos & Projetos</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
                     </ul>
                 </div>
 
@@ -40,9 +40,9 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Gabriel</span></h1><h3>Front-end Developer.</h3>
+                    <h1 class="home__title">Olá,<br>Eu sou <span class="home__title-color">Gabriel</span></h1><h3>Desenvolvedor Front-end.</h3>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button">Contato</a>
                 </div>
 
                 <div class="home__social">
@@ -66,7 +66,7 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title">Sobre</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -74,20 +74,20 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Gabriel</h2>
-                        <p class="about__text">Continuing to grow professionally in the field of front-end development is my goal, exploring new technologies and contributing to challenging projects that require skills in both web, desktop and mobile development, covering my knowledge and skills to practice back-end development, in order to become a full-stack developer.</p>           
+                        <h2 class="about__subtitle">Eu sou Gabriel Souza</h2>
+                        <p class="about__text">Continuar a crescer profissionalmente na área de desenvolvimento front-end é meu objetivo, explorando novas tecnologias e contribuindo para projetos desafiadores que exigem habilidades em desenvolvimento web, desktop e mobile, alinhando meus conhecimentos e habilidades para praticar o desenvolvimento back-end, a fim de me tornar um desenvolvedor full-stack.</p>           
                     </div>                                   
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title">Habilidades</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">These are the main skills in which I am most proficient, effective, efficient and agile in carrying out any projects, tests and/or adjustments when requested.</p>
+                        <h2 class="skills__subtitle">Habilidades Profissionais</h2>
+                        <p class="skills__text">Estas são as principais competências em que sou mais assertivo, eficaz, eficiente e ágil na realização de quaisquer projectos, testes e/ou ajustes quando solicitados.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-wordpress skills__icon'></i>
@@ -146,7 +146,7 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Trabalhos & Projetos</h2>
 
                 <div class="work__container bd-grid">
                     <a target="_blank" href="https://gbrlsouza.github.io/www.infomaqcampinas.com.br/" class="work__img">
@@ -172,15 +172,16 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="mailto:gabrielsouza_1909@hotmail.com" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <input type="text" placeholder="Subject" class="contact__input">
-                        <textarea name="" placeholder="Your message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="https://formsubmit.co/dev.gabrielsouza@hotmail.com" method="POST"  class="contact__form">
+                        <input type="text" name="name" placeholder="Nome" class="contact__input" required>
+                        <input type="email" name="email" placeholder="E-mail" class="contact__input" required>
+                        <input type="subject" name="subject" placeholder="Assunto" class="contact__input" required>
+                        <textarea name="message" placeholder="Sua Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portfolio-Gabriel-Souza-main/obrigado.html">
+                        <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -188,13 +189,13 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Gabriel</p>
+            <p class="footer__title">Gabriel Souza</p>
             <div class="footer__social">
                 <a href="https://www.linkedin.com/in/gabriel-costa-de-souza-066486230/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://www.instagram.com/web.gbrl" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://github.com/GbrlSouza/GbrlSouza" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <p class="footer__copy">&#169; All rigths reserved</p>
+            <p class="footer__copy">&#169; Todos os direitos reservados</p>
         </footer>
 
 
