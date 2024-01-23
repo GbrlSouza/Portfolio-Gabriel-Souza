@@ -71,6 +71,19 @@ img {
   display: block;
 }
 
+/*===== BOTAO VOLTAR AO TOPO ===== */
+
+.btn-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+}
+
+.btn-fixed.visible {
+  visibility: visible;
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
