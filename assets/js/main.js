@@ -21,6 +21,18 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*===== BOTAO VOLTAR AO TOPO ===== */
+
+const botao = document.querySelector(".btn-fixed");
+
+window.addEventListener("scroll", function (event) {
+    if (window.scrollY == 0) {
+        botao.classList.remove("visible");
+    } else {
+        botao.classList.add("visible");
+    }
+});
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
