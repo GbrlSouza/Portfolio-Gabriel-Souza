@@ -92,10 +92,12 @@ img {
   bottom: 30px;
   right: 30px;
   visibility: hidden;
+  z-index: 999;
 }
 
 .btn-fixed.visible {
   visibility: visible;
+  z-index: 999;
 }
 
 .material-icons {
