@@ -51,6 +51,20 @@ body {
   color: var(--second-color);
 }
 
+body::-webkit-scrollbar {
+    width: 15px;                    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;             /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2470e0;    /* color of the scroll thumb */
+    border-radius: 15px;            /* roundness of the scroll thumb */
+    border: 3px solid #fff;       /* creates padding around scroll thumb */
+}
+
 h1, h2, p {
   margin: 0;
 }
