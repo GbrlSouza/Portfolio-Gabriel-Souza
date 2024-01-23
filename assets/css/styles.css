@@ -99,6 +99,7 @@ img {
 }
 
 .material-icons {
+  background: #ffffffcc;
   border: solid 3px #2470e0;
   border-radius: 50%;
   color: #2470e0;
