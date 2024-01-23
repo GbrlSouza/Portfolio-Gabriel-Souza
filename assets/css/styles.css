@@ -104,6 +104,7 @@ img {
   border-radius: 50%;
   color: #2470e0;
   padding: 10px;
+  z-index: 999;
 }
 
 /*===== CLASS CSS ===== */
