@@ -192,8 +192,7 @@
                         <input type="subject" name="subject" placeholder="Assunto" class="contact__input" required>
                         <textarea name="message" placeholder="Sua Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="hidden" name="_next" value="https://gbrlsouza.github.io/Portfolio-Gabriel-Souza/obrigado.html">
-                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                        <input type="submit" value="Enviar" class="contact__button button">
+                        <input type="submit" value="Enviar" class="contact__button button g-recaptcha" data-sitekey="6LdH_2ApAAAAAFKh1l7aJRL_Va_wpHJiRIYwv-BJ" data-callback='onSubmit' data-action='submit' >
                     </form>
                 </div>
             </section>
@@ -223,12 +222,10 @@
         </script>
 
         <!--===== reCaptha =====-->
+        <!-- Replace the variables below. -->
         <script>
-          function onClick(e) {
-            e.preventDefault();
-            grecaptcha.enterprise.ready(async () => {
-              const token = await grecaptcha.enterprise.execute('6LdH_2ApAAAAAFKh1l7aJRL_Va_wpHJiRIYwv-BJ', {action: 'submit'});
-            });
+          function onSubmit(token) {
+            document.getElementById("demo-form").submit();
           }
         </script>
 
