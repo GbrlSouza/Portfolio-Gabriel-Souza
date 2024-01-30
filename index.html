@@ -6,6 +6,10 @@
         
         <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
         <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <!-- reCaptcha v2 -->
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdH_2ApAAAAAFKh1l7aJRL_Va_wpHJiRIYwv-BJ"></script>
+        <!-- Your code -->
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -188,6 +192,7 @@
                         <input type="subject" name="subject" placeholder="Assunto" class="contact__input" required>
                         <textarea name="message" placeholder="Sua Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="hidden" name="_next" value="https://gbrlsouza.github.io/Portfolio-Gabriel-Souza/obrigado.html">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                         <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
@@ -215,6 +220,16 @@
         <script src="./assets/js/vlibras.js"></script>
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+        <!--===== reCaptha =====-->
+        <script>
+          function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+              const token = await grecaptcha.enterprise.execute('6LdH_2ApAAAAAFKh1l7aJRL_Va_wpHJiRIYwv-BJ', {action: 'submit'});
+            });
+          }
         </script>
 
         <!--===== SCROLL REVEAL =====-->
