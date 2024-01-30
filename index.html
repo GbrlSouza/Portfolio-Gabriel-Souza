@@ -186,14 +186,14 @@
                 <h2 class="section-title">Contato</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/dev.gabrielsouza@hotmail.com" method="POST"  class="contact__form">
+                    <form id="register" action="https://formsubmit.co/dev.gabrielsouza@hotmail.com" method="POST"  class="contact__form">
                         <input type="text" name="name" placeholder="Nome" class="contact__input" required>
                         <input type="email" name="email" placeholder="E-mail" class="contact__input" required>
                         <input type="subject" name="subject" placeholder="Assunto" class="contact__input" required>
                         <textarea name="message" placeholder="Sua Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="hidden" name="_next" value="https://gbrlsouza.github.io/Portfolio-Gabriel-Souza/obrigado.html">
                         <input type="submit" value="Enviar" class="contact__button">
-                        <div id='recaptcha' class="g-recaptcha" data-sitekey="CHAVE DO SITE" data-callback="sendForm" data-size="invisible"></div>
+                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6LecImEpAAAAAAgk5cAehqBk6K11gV-hKwnpY07v" data-callback="sendForm" data-size="invisible"></div>
                     </form>
                 </div>
             </section>
@@ -224,10 +224,21 @@
 
         <!--===== reCaptha =====-->
         <!-- Replace the variables below. -->
-        <script>
-          function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-          }
+        <script type="text/javascript">
+            let form = document.querySelector('#register');
+            form.addEventListener('submit',  e => {
+                e.preventDefault();
+                let name = document.querySelector('#name');
+                let email = document.querySelector('#email');
+                if(!name.value || !email.value) {
+                    alert('Nome e Email são Obrigatorios');
+                    } else{
+                    grecaptcha.execute();
+                }       
+                });
+            function sendForm(){
+                alert("reCAPTCHA funcionou");
+            }
         </script>
 
         <!--===== SCROLL REVEAL =====-->
