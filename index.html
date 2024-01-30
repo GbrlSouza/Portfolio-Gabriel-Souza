@@ -12,10 +12,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <title>Portfólio Gabriel Souza</title>
-
-        <!-- reCaptcha v2 -->
-        <script src='https://www.google.com/recaptcha/api.js'></script> 
-        <!-- Your code -->
     </head>
     <body>
         <!--===== BOTAO VOLTAR AO TOPO =====-->
@@ -192,7 +188,6 @@
                         <input type="subject" name="subject" placeholder="Assunto" class="contact__input" required>
                         <textarea name="message" placeholder="Sua Mensagem" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         <input type="hidden" name="_next" value="https://gbrlsouza.github.io/Portfolio-Gabriel-Souza/obrigado.html">
-                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6Lc-JGEpAAAAAC3o3GEHWRvwb5dRmIQYW9a6l-ow" data-callback="sendForm" data-size="invisible"></div>
                         <input type="submit" value="Enviar" class="contact__button">
                     </form>
                 </div>
@@ -220,25 +215,6 @@
         <script src="./assets/js/vlibras.js"></script>
         <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
-
-        <!--===== reCaptha =====-->
-        <!-- Replace the variables below. -->
-        <script type="text/javascript">
-            let form = document.querySelector('#register');
-            form.addEventListener('submit',  e => {
-                e.preventDefault();
-                let name = document.querySelector('#name');
-                let email = document.querySelector('#email');
-                if(!name.value || !email.value) {
-                    alert('Nome e Email são Obrigatorios');
-                    } else{
-                    grecaptcha.execute();
-                }       
-                });
-            function sendForm(){
-                alert("reCAPTCHA funcionou");
-            }
         </script>
 
         <!--===== SCROLL REVEAL =====-->
