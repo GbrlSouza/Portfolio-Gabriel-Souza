@@ -29,6 +29,7 @@ Me baseei neste video para poder moldar meu portifólio.
 <div style="display: inline_block">
 <a href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank"><span>🤟 VLIBRAS</span></a><br>
 <a href="https://formsubmit.co/" target="_blank"><span>📬 formsubmit</span></a><br>
+<a href="https://www.google.com/recaptcha/admin/create" target="_blank"><img src="https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white"/></a><br>
 <a href="https://codepen.io/savian/pen/pVLejm" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 </div>
 
