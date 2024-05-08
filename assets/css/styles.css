@@ -445,6 +445,12 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+.footer img {
+  width: 25%;
+  display: block;
+  margin: 10px auto; 
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
