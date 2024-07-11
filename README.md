@@ -1,6 +1,6 @@
 # Portfolio Gabriel Souza
 
-![Logo do projeto](https://github.com/GbrlSouza/Portfolio-Gabriel-Souza/blob/main/assets/img/img%20projeto%20portifolio.png)
+![Logo do projeto](https://github.com/GbrlSouza/Portfolio-Gabriel-Souza/blob/main/assets/img/page.png)
 
 <div align="center" style="display: inline_block">
 <a href="https://gbrlsouza.github.io/Portfolio-Gabriel-Souza/" target="_blank"><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white"/></a>
